@@ -1,14 +1,17 @@
 # wildfire-analysis
 ### Purpose
+This repository contains resources and code for analyzing smoke impact on Green Bay, Wisconsin.
 
 ### Licensing
+The `common_analysis.ipynb` notebook uses code adapted from example codes for [extracting wildfire geojson data and calculating distances](https://drive.google.com/file/d/1B7AGlaW7d-27bHKLVXGBwLt8T-Elx-HB/view?usp=drive_link) (Revision 1.1 - August 16, 2024) and [acquiring the AQS API data](https://drive.google.com/file/d/1fwS60QStiMDqwINvW2LEDFBX5xg6Wnmg/view?usp=drive_link) (Revision 1.2 - August 16, 2024) developed by Dr. David W. McDonald for use in DATA 512, a course in the UW MS Data Science degree program. This code is provided under the [Creative Commons CC-BY](https://creativecommons.org/licenses/by/4.0/) license.
+
 
 ### Data
 
 #### Raw Data
-Wildfire data - Initial wildfire dataset retrieved from [USGS here](https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81). We use the `USGS_Wildland_Fire_Combined_Dataset.json` file found in the GeoJSON Files zip file. This file is not included in the repository due to its size.
+Wildfire data - Initial wildfire dataset retrieved from [USGS here](https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81). We use the `USGS_Wildland_Fire_Combined_Dataset.json` file found in the GeoJSON Files zip file. This file is not included in the repository due to its size. This dataset includes metadata for wildland fires from the 1800s to present.
 
-AQI data - Daily Air Quality Index data is retrieved using the EPA's [AQS API](https://aqs.epa.gov/aqsweb/documents/data_api.html).
+AQI data - Daily Air Quality Index data is retrieved using the EPA's [AQS API](https://aqs.epa.gov/aqsweb/documents/data_api.html). We focus on Gaseous AQI pollutants CO, SO2, NO2, and O2 and Particulate AQI pollutants PM10, PM2.5, and Acceptable PM2.5.
 
 #### Intermediate Data
 `aqi_estimates.csv` - contains the yearly AQI estimates retrieved from the AQS API in the common analysis portion of this project
