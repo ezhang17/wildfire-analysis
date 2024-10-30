@@ -14,7 +14,7 @@ AQI data - Daily Air Quality Index data is retrieved using the EPA's [AQS API](h
 `aqi_estimates.csv` - contains the yearly AQI estimates retrieved from the AQS API in the common analysis portion of this project
 
 Schema:
-| Column    | Data Type |
+| Column Name    | Data Type |
 | -------- | ------- |
 | year | Date |
 | aqi | Float |
@@ -22,7 +22,7 @@ Schema:
 `fire_distance_data.csv` - contains the year, size, and distance to Green Bay of each fire from the wildfire data, used to calculate the smoke estimates
 
 Schema:
-| Column    | Data Type |
+| Column Name   | Data Type |
 | -------- | ------- |
 | Fire_Year | Date |
 | Fire_Size_Acres | Float |
