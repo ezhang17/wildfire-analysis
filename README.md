@@ -6,7 +6,7 @@
 ### Data
 
 #### Raw Data
-Wildfire data - Initial wildfire dataset retrieved from [USGS here](https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81). We use the `USGS_Wildland_Fire_Combined_Dataset.json` file found in the GeoJSON Files zip folder. This dataset is not included in the repository due to its size.
+Wildfire data - Initial wildfire dataset retrieved from [USGS here](https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81). We use the `USGS_Wildland_Fire_Combined_Dataset.json` file found in the GeoJSON Files zip file. This file is not included in the repository due to its size.
 
 AQI data - Daily Air Quality Index data is retrieved using the EPA's [AQS API](https://aqs.epa.gov/aqsweb/documents/data_api.html).
 
