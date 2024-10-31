@@ -10,9 +10,9 @@ The code in this repository is available under the [MIT license](https://opensou
 ### Data
 
 #### Raw Data
-Wildfire data - Initial wildfire dataset retrieved from [USGS here](https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81). We use the `USGS_Wildland_Fire_Combined_Dataset.json` file found in the GeoJSON Files zip file. This file is not included in the repository due to its size. This dataset includes metadata for wildland fires from the 1800s to present.
+Wildfire data - Initial wildfire dataset retrieved from [USGS here](https://www.sciencebase.gov/catalog/item/61aa537dd34eb622f699df81). We use the `USGS_Wildland_Fire_Combined_Dataset.json` file found in the GeoJSON Files zip file. This file is not included in the repository due to its size. This dataset includes metadata for wildland fires from the 1800s to present. This dataset was collected and aggregated by the US Geological Survey and provides fire polygons in a GeoJSON format.
 
-AQI data - Daily Air Quality Index data is retrieved using the EPA's [AQS API](https://aqs.epa.gov/aqsweb/documents/data_api.html). We focus on Gaseous AQI pollutants CO, SO2, NO2, and O2 and Particulate AQI pollutants PM10, PM2.5, and Acceptable PM2.5.
+AQI data - Daily Air Quality Index data is retrieved using the EPA's [AQS API](https://aqs.epa.gov/aqsweb/documents/data_api.html). We focus on Gaseous AQI pollutants CO, SO2, NO2, and O2 and Particulate AQI pollutants PM10, PM2.5, and Acceptable PM2.5. The API provides historical data starting in the 1980's and does not provide any data in real-time. The AQI index indicates how healthy or clean the air is on a specific day.
 
 #### Intermediate Data
 `aqi_estimates.csv` - contains the yearly AQI estimates retrieved from the AQS API in the common analysis portion of this project
