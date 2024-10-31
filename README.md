@@ -38,3 +38,5 @@ In part 1, we start with a common analysis aiming to answer the following resear
 - What are the estimated wildfire smoke impacts on Green Bay, Wisconsin, each year for the most recent 60 years of wildfire data?
 
 The `common_analysis.ipynb` file contains the code used to perform the initial analysis. This notebook contains wildfire data and AQI data collection and processing, as well as smoke estimate calculations and analysis. We output 3 initial visualizations in this part of the project. Detailed figure descriptions can be found in this repository.
+
+The visualizations created in this part can be found in the `common_analysis_visualizations` folder of this repository.
