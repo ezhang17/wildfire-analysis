@@ -13,6 +13,7 @@ The code in this repository is available under the [MIT license](https://opensou
 In part 1, we start with a common analysis aiming to answer the following research question:
 - What are the estimated wildfire smoke impacts on Green Bay, Wisconsin, each year for the most recent 60 years of wildfire data?
 
+#### Code
 The `common_analysis.ipynb` file contains the code used to perform the initial analysis. This notebook contains wildfire data and AQI data collection and processing, as well as smoke estimate calculations and analysis. The notebook requires the following packages:
 
 **Standard Python modules**: os, json, time
@@ -21,7 +22,10 @@ The `common_analysis.ipynb` file contains the code used to perform the initial a
 
     *The 'wildfire' module is a user module created by Dr. David W. McDonald for student use in solving the DATA 512 class project. This module is not for reuse without express permissions.
 
+#### Output Files
 The visualizations created in this part can be found in the `common_analysis_visualizations` folder of this repository. A detailed description of each visualization as well as a reflection on collaboration is also included in the repository (`Common Analysis Visualization Descriptions and Reflection.pdf`).
+
+The intermediate data files, `aqi_estimates.csv` and `fire_distance_data.csv`, are included in the `intermediate_data` folder of the repository. More details are included in the below section.
 
 ## Data
 
