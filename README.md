@@ -40,6 +40,26 @@ The intermediate data files, `aqi_estimates.csv` and `fire_distance_data.csv`, a
 
 **AQI data** - Daily Air Quality Index data is retrieved using the [US EPA Air Quality System (AQS) API](https://aqs.epa.gov/aqsweb/documents/data_api.html). We focus on Gaseous AQI pollutants CO, SO2, NO2, and O2 and Particulate AQI pollutants PM10, PM2.5, and Acceptable PM2.5. The API provides historical data starting in the 1980's and does not provide any data in real-time. The AQI index indicates how healthy or clean the air is on a specific day. Due to the formation of the EPA in the 1970's and installation of stations in the 1980's, AQI data for Green Bay is only available starting from 1985. More details on how AQI is calculated can be found [here](https://document.airnow.gov/technical-assistance-document-for-the-reporting-of-daily-air-quailty.pdf).
 
+**Asthma data** - Asthma emergency room visit and hospitalization age-adjusted rates per 10,000 people were retrieved from the [Environmental Public Health Tracking: Asthma Data dashboard](https://www.dhs.wisconsin.gov/epht/asthma.htm) provided by the Wisconsin Department of Health Services. We use asthma to investigate the impact of smoke on those most at-risk of health impacts from exposure to wildfire smoke. Wildfire smoke has been [shown](https://doi.org/10.1007/s11882-023-01090-1) to have a clear association with acute effects on asthma. The emergency room visit data is available from 2002 through 2023, and hospitalization data is available from 2000 through 2022. Datasets were obtained by filtering the interactive dashboard to Brown County and downloading from the county-specific trend view. As outlined in the [Wisconsin.Gov Privacy Policy](https://www.wisconsin.gov/Pages/Policies.aspx), material on the website is available for noncommercial use by the general public under fair use guidelines. The data itself follows HIPAA guidelines by retaining the data anonymously. Counts less than five but more than zero are suppressed to protect confidentiality.
+
+These datasets were first cleaned in Excel by simply deleting unneeded columns and retaining only the county and state age-adjusted rates. The files created from the simple deletion are in the `asthma_data` folder in the repository. Further cleaning and manipulation code can be found in the `asthma_analysis.ipynb` Notebook.
+
+`Brown County Asthma Emergency Visit Rates.csv` - contains the county-level and state-level age-adjusted asthma emergency room visit rates per 10,000 people from 2002 through 2023 for Brown County, WI
+
+`Brown County Asthma Emergency Visit Rates.csv` sample data:
+| Year   | 2002 | 2003 | 2004 | ... |
+| -------- | ------- | ------- | ------- | ------- |
+| County rate | 43.4 | 46.6 | 46.2 | ... |
+| State rate | 48.21 | 50.27 | 46.32 | ... |
+
+`Brown County Asthma Hospitalization Rates.csv` - contains the county-level and state-level age-adjusted asthma hospitalization rates per 10,000 people from 2002 through 2023 for Brown County, WI
+
+`Brown County Asthma Hospitalization Rates.csv` sample data:
+| Year   | 2000 | 2001 | 2002 | ... |
+| -------- | ------- | ------- | ------- | ------- |
+| County rate | 9.1 | 8.8 | 8.8 | ... |
+| State rate | 10.72 | 10.23 | 9.73 | ... |
+
 ### Intermediate Data
 `aqi_estimates.csv` - contains the yearly AQI estimates retrieved from the AQS API in the common analysis portion of this project
 
@@ -49,7 +69,7 @@ The intermediate data files, `aqi_estimates.csv` and `fire_distance_data.csv`, a
 | year | Date |
 | aqi | Float |
 
-`fire_distance_data.csv` - contains the year, size, and distance to Green Bay of each fire from the wildfire data, used to calculate the smoke estimates. Note that this data contains the full set of years available in the wildfire data, including those before 1964.
+`fire_distance_data.csv` - contains the year, size, and distance to Green Bay of each fire from the wildfire data, used to calculate the smoke estimates. Note that this data contains the full set of years available in the wildfire data, including those before 1964
 
 `fire_distance_data.csv` schema:
 | Column Name   | Data Type |
@@ -58,11 +78,21 @@ The intermediate data files, `aqi_estimates.csv` and `fire_distance_data.csv`, a
 | Fire_Size_Acres | Float |
 | Average Distance to City | Float |
 
-`smoke_estimates.csv`
+`smoke_estimates.csv` - contains the smoke estimates calculated in `common_analysis.ipynb` using fire distance and size from 1964 through 2020
 
 `smoke_estimates.csv` schema:
+| Column Name   | Data Type |
+| -------- | ------- |
+| Fire_Year | Date |
+| Agg_Smoke_Estimate | Float |
+| Smoke_Estimate | Float |
 
-
-`smoke_predictions.csv`
+`smoke_predictions.csv` - contains the smoke estimate predictions for 2025-2050 created in `common_analysis.ipynb` using the exponential smoothing model fitted to the historical smoke estimates
 
 `smoke_predictions.csv` schema:
+| Column Name   | Data Type |
+| -------- | ------- |
+| Year | Date |
+| Forecast | Float |
+| Upper CI | Float |
+| Lower CI | Float |
