@@ -1,5 +1,4 @@
 # wildfire-analysis
-**For Part 1 Grading:** The description of each visualization as well as a reflection on collaboration is included in the repository as `Common Analysis Visualization Descriptions and Reflection.pdf`.
 ## Purpose
 This repository contains resources and code for analyzing smoke impact on Green Bay, Wisconsin for the last 60 years. We start with a common analysis and formulation of a smoke estimate using wildfire data.
 
