@@ -26,6 +26,13 @@ The visualizations created in this part can be found in the `common_analysis_vis
 
 The intermediate data files, `aqi_estimates.csv` and `fire_distance_data.csv`, are included in the `intermediate_data` folder of the repository. More details are included in the below section.
 
+### Part 2 - Asthma Analysis
+!!!!!!!!!!!!!!!!!!!!!! need to fill in
+#### Code
+`asthma_analysis.ipynb`
+#### Output Files
+
+
 ## Data
 
 ### Raw Data
@@ -50,3 +57,12 @@ The intermediate data files, `aqi_estimates.csv` and `fire_distance_data.csv`, a
 | Fire_Year | Date |
 | Fire_Size_Acres | Float |
 | Average Distance to City | Float |
+
+`smoke_estimates.csv`
+
+`smoke_estimates.csv` schema:
+
+
+`smoke_predictions.csv`
+
+`smoke_predictions.csv` schema:
