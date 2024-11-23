@@ -19,7 +19,7 @@ The `common_analysis.ipynb` file contains the code used to perform the initial a
 
 **Other Python modules**: pyproj, requests, dotenv, pandas, numpy, matplotlib, statsmodels, wildfire*
 
-    *The 'wildfire' module is a user module created by Dr. David W. McDonald for student use in solving the DATA 512 class project. This module is not for reuse without express permissions.
+*The 'wildfire' module is a user module created by Dr. David W. McDonald for student use in solving the DATA 512 class project. This module is not for reuse without express permissions.
 
 #### Output Files
 The visualizations created in this part can be found in the `common_analysis_visualizations` folder of this repository. A detailed description of each visualization as well as a reflection on collaboration is also included in the repository (`Common Analysis Visualization Descriptions and Reflection.pdf`).
