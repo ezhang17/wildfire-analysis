@@ -12,6 +12,8 @@ The code in this repository is available under the [MIT license](https://opensou
 In part 1, we start with a common analysis aiming to answer the following research question:
 - What are the estimated wildfire smoke impacts on Green Bay, Wisconsin, each year for the most recent 60 years of wildfire data?
 
+We only consider fires within 650 miles of Green Bay, Wisconsin and in fire season (May 1 through October 31).
+
 #### Code
 The `common_analysis.ipynb` file contains the code used to perform the initial analysis. This notebook contains wildfire data and AQI data collection and processing, as well as smoke estimate calculations and analysis. The notebook requires the following packages:
 
