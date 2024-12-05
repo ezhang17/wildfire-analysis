@@ -1,11 +1,13 @@
 # wildfire-analysis
 ## Purpose
-This repository contains resources and code for analyzing smoke impact on Green Bay, Wisconsin for the last 60 years. We start with a common analysis and formulation of a smoke estimate using wildfire data.
+This repository contains resources and code for analyzing smoke impact on Green Bay, Wisconsin for the last 60 years with a focus on asthma impacts. We start with a common analysis and formulation of a smoke estimate using wildfire data. We then use the smoke estimates from the last 60 years to predict smoke estimates for the next 25 years. We extend the common analysis by adding asthma data and performing an analysis on the relationship between smoke estimates and asthma emergency visit and hospitalization rates in Green Bay, WI.
+
+We report our background research, methodology, findings, implications, limitations, and a discussion on human centered data science in a written report that can be found in the root of this repository as `Final Report.pdf`.
 
 ## Licensing
 The `common_analysis.ipynb` notebook uses code adapted from example codes for [extracting wildfire geojson data and calculating distances](https://drive.google.com/file/d/1B7AGlaW7d-27bHKLVXGBwLt8T-Elx-HB/view?usp=drive_link) (Revision 1.1 - August 16, 2024) and [acquiring the AQS API data](https://drive.google.com/file/d/1fwS60QStiMDqwINvW2LEDFBX5xg6Wnmg/view?usp=drive_link) (Revision 1.2 - August 16, 2024) developed by Dr. David W. McDonald for use in DATA 512, a course in the UW MS Data Science degree program. This code is provided under the [Creative Commons CC-BY](https://creativecommons.org/licenses/by/4.0/) license.
 
-The code in this repository is available under the [MIT license](https://opensource.org/license/mit).
+The code in this repository (`common_analysis.ipynb` and `asthma_analysis.ipynb`) is available under the [MIT license](https://opensource.org/license/mit).
 
 ## Analysis Process
 ### Part 1 - Common Analysis
@@ -22,7 +24,9 @@ The `common_analysis.ipynb` file contains the code used to perform the initial a
 
 **Standard Python modules**: os, json, time
 
-**Other Python modules**: pyproj, requests, dotenv, pandas, numpy, matplotlib, statsmodels, wildfire*
+**Non-standard Python modules**: pyproj, requests, dotenv, pandas, numpy, matplotlib, statsmodels, wildfire*
+
+These modules can be installed using the `pip install <module name>` command.
 
 *The 'wildfire' module is a user module created by Dr. David W. McDonald for student use in solving the DATA 512 class project. This module is not for reuse without express permissions.
 
@@ -35,7 +39,8 @@ The intermediate data files, `aqi_estimates.csv`, `fire_distance_data.csv`, `smo
 In part 2, we extend the analysis to answer the following questions:
 - How are smoke estimates and asthma emergency visit and hospitalization rates related?
 - Can we create a predictive model to predict future smoke-related asthma emergency visit and hospitalization rates for Green Bay?
-We use annual age-adjusted rates per 10,000 for asthma emergency visits and hospitalizations in Brown County, WI.
+
+In this part of the analysis, we explore annual age-adjusted rates per 10,000 for asthma emergency visits and hospitalizations in Brown County, WI from 2000-2023. We look at the overall trend for these metrics and explore the relationship between these and the smoke estimate created in part 1. We end with a brief discussion on limitations and future work.
 
 This portion of the analysis uses the **Asthma data** and `smoke_estimates.csv`, `smoke_predictions.csv` files from the `intermediate_data` folder described in the Data section below.
 
