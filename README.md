@@ -55,7 +55,7 @@ These modules can be installed using the `pip install <module name>` command.
 The visualizations created in this part can be found in the `asthma_analysis_visualizations` folder of this repository. The visualizations include intial exploratory data analysis of the asthma dataset, comparison trend charts for county level and state level asthma data, and a comparison with smoke estimates.
 
 ### Final Report
-The final written report includes background research, methodology, findings, implications, and discussions of limitations. The report can be found in the root of this repository as `Final Report.pdf`. The report also discusses the role of human centered data science in the design and implementation of this project.
+The report can be found in the root of this repository as `Final Report.pdf`. The final written report includes background research, methodology, findings, implications, limitations, and discussions on the role of human centered data science in the design and implementation of this project. This report also provides recommendations and guidance for policymakers on next steps regarding wildfire smoke impacts on Green Bay, Wisconsin.
 
 ## Data
 
