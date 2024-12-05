@@ -2,7 +2,7 @@
 ## Purpose
 This repository contains resources and code for analyzing smoke impact on Green Bay, Wisconsin for the last 60 years with a focus on asthma impacts. We start with a common analysis and formulation of a smoke estimate using wildfire data. We then use the smoke estimates from the last 60 years to predict smoke estimates for the next 25 years. We extend the common analysis by adding asthma data and performing an analysis on the relationship between smoke estimates and asthma emergency visit and hospitalization rates in Green Bay, WI.
 
-We report our background research, methodology, findings, implications, limitations, and a discussion on human centered data science in a written report that can be found in the root of this repository as `Final Report.pdf`.
+We present recommendations for local policymakers and report our background research, methodology, findings, implications, limitations, and a discussion on human centered data science in a written report that can be found in the root of this repository as `Final Report.pdf`.
 
 ## Licensing
 The `common_analysis.ipynb` notebook uses code adapted from example codes for [extracting wildfire geojson data and calculating distances](https://drive.google.com/file/d/1B7AGlaW7d-27bHKLVXGBwLt8T-Elx-HB/view?usp=drive_link) (Revision 1.1 - August 16, 2024) and [acquiring the AQS API data](https://drive.google.com/file/d/1fwS60QStiMDqwINvW2LEDFBX5xg6Wnmg/view?usp=drive_link) (Revision 1.2 - August 16, 2024) developed by Dr. David W. McDonald for use in DATA 512, a course in the UW MS Data Science degree program. This code is provided under the [Creative Commons CC-BY](https://creativecommons.org/licenses/by/4.0/) license.
