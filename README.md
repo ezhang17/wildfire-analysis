@@ -31,7 +31,7 @@ These modules can be installed using the `pip install <module name>` command.
 *The 'wildfire' module is a user module created by Dr. David W. McDonald for student use in solving the DATA 512 class project. This module is not for reuse without express permissions.
 
 #### Output Files
-The visualizations created in this part can be found in the `common_analysis_visualizations` folder of this repository. A detailed description of each visualization as well as a reflection on collaboration is also included in the `common_analysis_visualizations` folder of this repository (`Common Analysis Visualization Descriptions and Reflection.pdf`).
+The visualizations created in this part can be found in the `common_analysis_visualizations` folder of this repository. A detailed description of the `aqi_vs_smoke_estimates.png`, `fire_frequency.png`, and `total_acres_burned.png` visualizations as well as a reflection on collaboration is also included in the `common_analysis_visualizations` folder of this repository (`Common Analysis Visualization Descriptions and Reflection.pdf`).
 
 The intermediate data files, `aqi_estimates.csv`, `fire_distance_data.csv`, `smoke_estimates.csv`, and `smoke_predictions.csv`,  are included in the `intermediate_data` folder of the repository. More details are included in the Data section below.
 
@@ -52,7 +52,7 @@ The `asthma_analysis.ipynb` file contains the code used to perform this section 
 These modules can be installed using the `pip install <module name>` command.
 
 #### Output Files
-The visualizations created in this part can be found in the `asthma_analysis_visualizations` folder of this repository.
+The visualizations created in this part can be found in the `asthma_analysis_visualizations` folder of this repository. The visualizations include intial exploratory data analysis of the asthma dataset, comparison trend charts for county level and state level asthma data, and a comparison with smoke estimates.
 
 ### Final Report
 The final written report includes background research, methodology, findings, implications, and discussions of limitations. The report can be found in the root of this repository as `Final Report.pdf`. The report also discusses the role of human centered data science in the design and implementation of this project.
